@@ -694,6 +694,11 @@ section,
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
+  text-shadow: 
+      -1px -1px 0 black,
+      1px -1px 0 black,
+      -1px 1px 0 black,
+      1px 1px 0 black; /* Garis tepi hitam */
 }
 
 .hero h2 span {
@@ -704,6 +709,11 @@ section,
   max-width: 80%;
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
+  text-shadow: 
+      -1px -1px 0 black,
+      1px -1px 0 black,
+      -1px 1px 0 black,
+      1px 1px 0 black; /* Garis tepi hitam */
 }
 
 .hero .carousel-control-prev,
@@ -757,7 +767,7 @@ section,
     min-height: 90vh;
   }
 
-  .hero h2 {
+  . hero h2 {
     font-size: 28px;
   }
 }
@@ -818,7 +828,6 @@ section,
     transform: translate(85px, 0%);
   }
 }
-
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
