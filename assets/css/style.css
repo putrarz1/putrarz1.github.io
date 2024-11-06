@@ -28,10 +28,100 @@ body {
 /*=====================================
   NAVBAR STYLES 
     ===================================*/
+    
+    /* Mobile-specific styles for centering navbar links vertically */
+@media (max-width: 767px) {
+    /* Ensure the navbar-toggler (hamburger) icon is still clickable */
+    .navbar-toggler {
+        z-index: 1050; /* Make sure it's above the other elements */
+    }
+
+    /* Center navbar items vertically in collapsed state */
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center items vertically */
+        align-items: center; /* Center items horizontally */
+        height: 0; /* Start with a height of 0 */
+        overflow: hidden; /* Hide content when collapsed */
+        transition: height 0.5s ease, padding 0.5s ease; /* Smooth transition for height */
+    }
+
+    /* When the navbar is expanded */
+    .navbar-collapse.collapse.in {
+        height: auto; /* Expand to fit content */
+        padding-top: 10px; /* Add some space at the top if needed */
+        padding-bottom: 10px; /* Add some space at the bottom */
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center horizontally */
+        width: 100%; /* Full width of the container */
+        opacity: 0; /* Initially hide navbar items */
+        transition: opacity 0.5s ease; /* Smooth transition for fading in */
+    }
+
+    .navbar-nav > li {
+        width: 100%; /* Each item takes full width */
+        text-align: center; /* Center text in each link */
+    }
+
+    .navbar-nav > li > a {
+        width: 100%; /* Make each link take full width */
+        padding: 15px 0; /* Padding for easier tap area */
+        text-align: center; /* Ensure text is centered */
+    }
+
+    /* Make the navbar items fade in smoothly when menu is expanded */
+    .navbar-collapse.collapse.in .navbar-nav {
+        opacity: 1; /* Show navbar items */
+    }
+}
+
+
+    /* Remove border and underline from the logo and text */
+.navbar-inverse .navbar-brand {
+    border: none; /* Remove any border */
+    text-decoration: none; /* Remove text decoration */
+}
+
+/* Remove underline from navbar links */
+.navbar-inverse .navbar-nav > li > a {
+    text-decoration: none; /* Remove underline */
+}
+
+/* Prevent borders under navbar and logo */
+.navbar-inverse {
+    border-bottom: none; /* Remove border from bottom of the navbar */
+}
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+    .navbar-collapse {
+        border: none; /* No border when the navbar is collapsed */
+        box-shadow: none; /* Optional: remove box shadow if present */
+    }
+
+    .navbar-toggle {
+        border: none; /* Remove border from the hamburger icon */
+    }
+
+    .navbar-inverse .navbar-collapse.in {
+        border: none; /* Prevent any border under the collapsed menu */
+    }
+
+    .navbar-brand img {
+        margin-bottom: 0; /* Optional: adjust logo margin if needed */
+    }
+}
+
 
     .logo-custom {
         vertical-align: middle;
         height: 40px; /* Sesuaikan tinggi logo jika diperlukan */
+        
     }
     
     .logo-text {
@@ -41,6 +131,7 @@ body {
         margin-left: 8px; /* Jarak antara logo dan teks */
         vertical-align: middle;
     }
+
     
 
 #menu {
@@ -181,23 +272,23 @@ h1::after {
 /* Media Query untuk perangkat mobile */
 @media (max-width: 768px) {
     .logo-img {
-        width: 80px; /* Ukuran logo lebih kecil di perangkat mobile */
-        height: 80px;
+        width: 60px; /* Ukuran logo lebih besar di perangkat mobile */
+        height: 60px;
     }
 
     .title-text {
-        font-size: 1.5em; /* Ukuran teks judul sedikit lebih kecil di perangkat mobile */
+        font-size: 1.4em; /* Ukuran teks judul sedikit lebih kecil di perangkat mobile */
     }
 }
 
 @media (max-width: 480px) {
     .logo-img {
-        width: 60px; /* Ukuran logo lebih kecil lagi di perangkat dengan layar kecil */
-        height: 60px;
+        width: 55px; /* Ukuran logo lebih besar lagi di perangkat dengan layar kecil */
+        height: 55px;
     }
 
     .title-text {
-        font-size: 1,2em; /* Ukuran teks judul lebih kecil lagi di perangkat dengan layar kecil */
+        font-size: 1.2em; /* Ukuran teks judul lebih besar lagi di perangkat dengan layar kecil */
     }
 }
 
