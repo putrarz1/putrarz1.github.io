@@ -29,9 +29,19 @@ body {
   NAVBAR STYLES 
     ===================================*/
 
-.logo-custom {
-    max-height: 40px;
-}
+    .logo-custom {
+        vertical-align: middle;
+        height: 40px; /* Sesuaikan tinggi logo jika diperlukan */
+    }
+    
+    .logo-text {
+        font-size: 1.2em; /* Sesuaikan ukuran teks */
+        font-weight: bold;
+        color: #ffffff; /* Ubah warna sesuai kebutuhan */
+        margin-left: 8px; /* Jarak antara logo dan teks */
+        vertical-align: middle;
+    }
+    
 
 #menu {
     background-color: rgba(28, 43, 75, 1);
@@ -59,7 +69,7 @@ body {
 .home-sec {
     padding-top: 10px;
     padding-bottom: 60px;
-    background: url(../img/header.jpg) no-repeat center center;
+    background: url(../img/depan.jpg) no-repeat center center;
     padding: 0;
     -webkit-background-size: cover;
     background-size: cover;
@@ -145,34 +155,53 @@ h1::after {
 /*=====================================
   ABOUT STYLES 
   ===================================*/
-.about-div {
+  .about-div {
     padding: 30px;
 }
+    
+.logo-title-container {
+    display: flex;
+    align-items: center; /* Menyelaraskan logo dan judul secara vertikal */
+    margin-bottom: 15px; /* Jarak antara baris ini dengan konten di bawahnya */
+}
+
+.logo-img {
+    width: 100px; /* Sesuaikan ukuran logo */
+    height: 100px;
+    border-radius: 50%; /* Membuat logo berbentuk lingkaran */
+    margin-right: 10px; /* Jarak antara logo dan judul */
+    transition: transform 0.3s ease-in-out; /* Transisi animasi pada transformasi */
+}
+.logo-img:hover {
+    transform: scale(1.2); /* Membesarkan logo 1.2 kali saat di-hover */
+}
+
+.title-text {
+    font-size: 1.5em; /* Ukuran font untuk judul */
+    font-weight: bold;
+    color: #333; /* Warna teks judul */
+}
+
 
 .icon-round-border {
-    border: 10px double #1A94C4;
+    border: 10px double #1A94C4; /* Border berwarna biru dengan gaya double */
     color: #2f9484;
     text-align: center;
     padding-top: 15px;
     height: 100px;
     width: 100px;
-    border-radius: 50%;
+    border-radius: 50%; /* Membuat elemen berbentuk lingkaran */
     cursor: pointer;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
+    display: inline-block; /* Untuk menyusun logo secara inline */
+    transition: 0.3s; /* Transisi yang halus */
 }
 
-    .icon-round-border:hover {
-        color: #fff;
-        border: 10px double #fff;
-        background-color: #1A94C4;
-        -webkit-transition: 0.3s;
-        -moz-transition: 0.3s;
-        -o-transition: 0.3s;
-        transition: 0.3s;
-    }
+.icon-round-border:hover {
+    color: #fff;
+    border: 10px double #fff; /* Border berubah menjadi putih saat hover */
+    background-color: #1A94C4; /* Background berubah menjadi biru saat hover */
+    transition: 0.3s;
+}
 
 .about-div hr {
     border: 1px solid #1A94C4;
@@ -190,10 +219,9 @@ h1::after {
 
 .btn-set {
     border-radius: 0px;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
     margin-bottom: 20px;
 }
+
 /*=====================================
   FACULTY STYLES 
   ===================================*/
