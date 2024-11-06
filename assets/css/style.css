@@ -166,14 +166,10 @@ h1::after {
 }
 
 .logo-img {
-    width: 100px; /* Sesuaikan ukuran logo */
-    height: 100px;
+    width: 80px; /* Ukuran logo default */
+    height: 80px;
     border-radius: 50%; /* Membuat logo berbentuk lingkaran */
     margin-right: 10px; /* Jarak antara logo dan judul */
-    transition: transform 0.3s ease-in-out; /* Transisi animasi pada transformasi */
-}
-.logo-img:hover {
-    transform: scale(1.2); /* Membesarkan logo 1.2 kali saat di-hover */
 }
 
 .title-text {
@@ -182,44 +178,27 @@ h1::after {
     color: #333; /* Warna teks judul */
 }
 
+/* Media Query untuk perangkat mobile */
+@media (max-width: 768px) {
+    .logo-img {
+        width: 40px; /* Ukuran logo lebih kecil di perangkat mobile */
+        height: 40px;
+    }
 
-.icon-round-border {
-    border: 10px double #1A94C4; /* Border berwarna biru dengan gaya double */
-    color: #2f9484;
-    text-align: center;
-    padding-top: 15px;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%; /* Membuat elemen berbentuk lingkaran */
-    cursor: pointer;
-    display: inline-block; /* Untuk menyusun logo secara inline */
-    transition: 0.3s; /* Transisi yang halus */
+    .title-text {
+        font-size: 1.2em; /* Ukuran teks judul sedikit lebih kecil di perangkat mobile */
+    }
 }
 
-.icon-round-border:hover {
-    color: #fff;
-    border: 10px double #fff; /* Border berubah menjadi putih saat hover */
-    background-color: #1A94C4; /* Background berubah menjadi biru saat hover */
-    transition: 0.3s;
-}
+@media (max-width: 480px) {
+    .logo-img {
+        width: 35px; /* Ukuran logo lebih kecil lagi di perangkat dengan layar kecil */
+        height: 35px;
+    }
 
-.about-div hr {
-    border: 1px solid #1A94C4;
-}
-
-.about-div h3 {
-    font-size: 25px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.about-div p {
-    padding-top: 10px;
-}
-
-.btn-set {
-    border-radius: 0px;
-    margin-bottom: 20px;
+    .title-text {
+        font-size: 1em; /* Ukuran teks judul lebih kecil lagi di perangkat dengan layar kecil */
+    }
 }
 
 /*=====================================
