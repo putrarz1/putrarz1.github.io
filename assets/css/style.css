@@ -314,6 +314,32 @@ h1::after {
     #faculty-sec .header-line {
         color: #fff;
     }
+
+    /* Center the text and limit the image size */
+.faculty-div {
+    text-align: center; /* Centers all text within faculty-div */
+}
+
+.faculty-div img {
+    max-width: 100%; /* Ensures image does not exceed container width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Mobile-specific styling */
+@media (max-width: 768px) {
+    .col-sm-4 {
+        width: 100%; /* Stacks columns vertically on mobile */
+        margin-bottom: 20px; /* Adds space between stacked columns */
+    }
+
+    .faculty-div img {
+        max-width: 80%; /* Smaller image size for mobile */
+        margin: 0 auto; /* Centers image */
+        display: block; /* Centers image */
+    }
+}
+
 .faculty-div h4 {
     line-height:30px;
     font-weight:700;
@@ -347,7 +373,7 @@ h1::after {
 #contact-sec {
     padding-top: 10px;
     padding-bottom: 60px;
-    background: url(../img/contact.jpg) no-repeat center center;
+    background: url(../img/upacara.jpg) no-repeat center center;
     padding: 0;
     -webkit-background-size: cover;
     background-size: cover;
