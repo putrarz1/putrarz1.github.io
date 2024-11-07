@@ -11,4 +11,11 @@ List that must be made:
 
 -Achievement page
 
+-page jurusan
+
+-page fasilitas
+
+-page ekstrakulikuler
+
+
 For now, that's what I have to do to get excited.

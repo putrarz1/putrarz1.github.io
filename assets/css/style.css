@@ -12,6 +12,7 @@
 /* =============================================================
    GENERAL STYLES
  ============================================================ */
+ 
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 30px;
@@ -283,23 +284,23 @@ h1::after {
 /* Media Query untuk perangkat mobile */
 @media (max-width: 768px) {
     .logo-img {
-        width: 60px; /* Ukuran logo lebih besar di perangkat mobile */
-        height: 60px;
+        width: 100px; /* Ukuran logo lebih besar di perangkat mobile */
+        height: 100px;
     }
 
     .title-text {
-        font-size: 1.4em; /* Ukuran teks judul sedikit lebih kecil di perangkat mobile */
+        font-size: 1.5em; /* Ukuran teks judul sedikit lebih kecil di perangkat mobile */
     }
 }
 
 @media (max-width: 480px) {
     .logo-img {
-        width: 55px; /* Ukuran logo lebih besar lagi di perangkat dengan layar kecil */
-        height: 55px;
+        width: 80px; /* Ukuran logo lebih besar lagi di perangkat dengan layar kecil */
+        height: 80px;
     }
 
     .title-text {
-        font-size: 1.2em; /* Ukuran teks judul lebih besar lagi di perangkat dengan layar kecil */
+        font-size: 1.3em; /* Ukuran teks judul lebih besar lagi di perangkat dengan layar kecil */
     }
 }
 
