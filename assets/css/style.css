@@ -12,8 +12,7 @@
 /* =============================================================
    GENERAL STYLES
  ============================================================ */
- 
-body {
+ body {
     font-family: 'Open Sans', sans-serif;
     line-height: 30px;
     font-size: 14px;
@@ -26,6 +25,7 @@ body {
     padding-top:30px;
     padding-bottom:50px;
 }
+
 /*=====================================
   NAVBAR STYLES 
     ===================================*/
@@ -264,18 +264,18 @@ h1::after {
     
 .logo-title-container {
     display: flex;
-    align-items: center; /* Menyelaraskan logo dan judul secara vertikal */
-    margin-bottom: 15px; /* Jarak antara baris ini dengan konten di bawahnya */
+    flex-direction: column; /* Mengatur elemen menjadi kolom */
+    align-items: center;    /* Mengatur elemen agar berada di tengah secara horizontal */
+    text-align: center;     /* Mengatur teks agar berada di tengah */
 }
 
 .logo-img {
-    width: 80px; /* Ukuran logo default */
-    height: 80px;
-    border-radius: 50%; /* Membuat logo berbentuk lingkaran */
-    margin-right: 10px; /* Jarak antara logo dan judul */
+    max-width: 100%; /* Pastikan logo responsif */
+    height: auto;    /* Mempertahankan rasio aspek logo */
 }
 
 .title-text {
+    margin-top: 10px; /* Memberikan jarak antara logo dan judul */
     font-size: 1.5em; /* Ukuran font untuk judul */
     font-weight: bold;
     color: #333; /* Warna teks judul */
