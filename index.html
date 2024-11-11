@@ -40,7 +40,7 @@
                      <li><a href="jurusan.html">JURUSAN</a></li>
                     <li><a href="fasilitas.html">FASILITAS</a></li>
                      <li><a href="ekstrakulikuler.html">EKSTRAKURIKULER</a></li>
-                     <li><a href="#contact-sec">CONTACT</a></li>
+                    
                 </ul>
             </div>
            
@@ -333,66 +333,53 @@
 
              </div>
              <!--/.HEADER LINE END-->
-           <div class="row set-row-pad"  data-scroll-reveal="enter from the bottom after 0.5s" >
-           
-               
-                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control "  required="required" placeholder="Your Name" />
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control " required="required"  placeholder="Your Email" />
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" required="required" class="form-control" style="min-height: 150px;" placeholder="Message"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-info btn-block btn-lg">SUBMIT REQUEST</button>
-                        </div>
-
-                    </form>
-                </div>
-
-                   
-     
-              
-              
-                
-               </div>
-                </div>
-          </div> 
-       </div>
-     <div class="container">
-             <div class="row set-row-pad"  >
-    <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1 " data-scroll-reveal="enter from the bottom after 0.4s">
-
-                    <h2 ><strong>Lokasi Kami </strong></h2>
-        <hr />
-                    <div>
-                        <h4>Jalan Raya Cikatomas No. 216</h4>
-                        <h4> Kec. Cikatomas</h4>
-                        <h4><strong>Call:</strong>  +62 082218737177 </h4>
-                        <h4><strong>Email: </strong>rockp9416@gmail.com</h4>
+             <div class="col-lg-6 col-md-6 col-sm-12">
+                <form action="send_message.php" method="post">
+                    <div class="form-group">
+                        <label for="name">Nama:</label>
+                        <input type="text" class="form-control" id="name" name="name" required />
                     </div>
-
-
-                </div>
-                 <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="enter from the bottom after 0.4s">
-
-                    <h2 ><strong>Social Conectivity </strong></h2>
-        <hr />
-                    <div >
-                        <a href="#">  <img src="assets/img/Social/facebook.png" alt="" /> </a>
-                     <a href="#"> <img src="assets/img/Social/google-plus.png" alt="" /></a>
-                     <a href="#"> <img src="assets/img/Social/twitter.png" alt="" /></a>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required />
                     </div>
+                    <div class="form-group">
+                        <label for="message">Pesan:</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                     </div>
-
-
-                </div>
+                    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                </form>
+            </div>
+    
+      <div class="container">
+              <div class="row set-row-pad"  >
+     <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1 " data-scroll-reveal="enter from the bottom after 0.4s">
+    
+                     <h2 ><strong>Lokasi Kami </strong></h2>
+         <hr />
+                     <div>
+                         <h4>Jalan Raya Cikatomas No. 216</h4>
+                         <h4> Kec. Cikatomas</h4>
+                         <h4><strong>Call:</strong>  +62 082218737177 </h4>
+                         <h4><strong>Email: </strong>rockp9416@gmail.com</h4>
+                     </div>
+    
+    
                  </div>
-     <!-- CONTACT SECTION END-->
+                  <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="enter from the bottom after 0.4s">
+    
+                     <h2 ><strong>Social Conectivity </strong></h2>
+         <hr />
+                     <div >
+                         <a href="#">  <img src="assets/img/Social/facebook.png" alt="" /> </a>
+                      <a href="#"> <img src="assets/img/Social/google-plus.png" alt="" /></a>
+                      <a href="#"> <img src="assets/img/Social/twitter.png" alt="" /></a>
+                     </div>
+                     </div>
+    
+    
+                 </div>
+                  </div>
     <div id="footer">
           &copy 2024 SMK ASSYAFI'IYAH | All Rights Reserved |  <a href="http://binarytheme.com" style="color: #fff" target="_blank">Design by : binarytheme.com</a>
     </div>
