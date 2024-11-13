@@ -5,9 +5,19 @@ List that must be made:
 
 -page jurusan (Done)
 
--page fasilitas
+-page fasilitas(Done)
 
--page ekstrakulikuler
+-page ekstrakulikuler(Done)
+
+-perfect the page jurusan
+
+-perfect the page ekstrakulikuler
+
+-perfect the page subpage jurusan
+
+-subpage fasilitas 
+
+-subpage ekstrakulikuler
 
 
 For now, that's what I have to do to get excited.
