@@ -9,6 +9,38 @@
    
     ========================================================  */
 
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        margin: auto;
+    }
+    
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px; /* Ukuran font yang konsisten */
+    }
+    
+    .contact-form button {
+        background-color: #007bff; /* Warna latar belakang tombol */
+        color: white; /* Warna teks tombol */
+        cursor: pointer; /* Kursor pointer saat hover */
+        transition: background-color 0.3s; /* Efek transisi untuk hover */
+    }
+    
+    .contact-form button:hover {
+        background-color: #0056b3; /* Warna latar belakang saat hover */
+    }
+    .button-container {
+        display: flex;
+        justify-content: center;
+    }
+   
 /* =============================================================
    GENERAL STYLES
  ============================================================ */

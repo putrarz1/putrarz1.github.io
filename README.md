@@ -9,7 +9,7 @@ List that must be made:
 
 -page ekstrakulikuler(Done)
 
--perfect the page jurusan
+-perfect the page jurusan(Done)
 
 -perfect the page ekstrakulikuler
 
