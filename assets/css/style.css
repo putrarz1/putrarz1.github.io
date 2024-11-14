@@ -9,174 +9,219 @@
    
     ========================================================  */
 
-    .contact-form {
-        display: flex;
-        flex-direction: column;
-        max-width: 500px;
-        margin: auto;
-    }
-    
-    .contact-form input,
-    .contact-form textarea,
-    .contact-form button {
-        margin-bottom: 15px;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 16px; /* Ukuran font yang konsisten */
-    }
-    
-    .contact-form button {
-        background-color: #007bff; /* Warna latar belakang tombol */
-        color: white; /* Warna teks tombol */
-        cursor: pointer; /* Kursor pointer saat hover */
-        transition: background-color 0.3s; /* Efek transisi untuk hover */
-    }
-    
-    .contact-form button:hover {
-        background-color: #0056b3; /* Warna latar belakang saat hover */
-    }
-    .button-container {
-        display: flex;
-        justify-content: center;
-    }
-   
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    /* Ukuran font yang konsisten */
+}
+
+.contact-form button {
+    background-color: #007bff;
+    /* Warna latar belakang tombol */
+    color: white;
+    /* Warna teks tombol */
+    cursor: pointer;
+    /* Kursor pointer saat hover */
+    transition: background-color 0.3s;
+    /* Efek transisi untuk hover */
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+    /* Warna latar belakang saat hover */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
 /* =============================================================
    GENERAL STYLES
  ============================================================ */
- body {
+body {
     font-family: 'Open Sans', sans-serif;
     line-height: 30px;
     font-size: 14px;
 }
 
 .set-pad {
-    padding-top:35px;
+    padding-top: 35px;
 }
+
 .set-row-pad {
-    padding-top:30px;
-    padding-bottom:50px;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 /*=====================================
   NAVBAR STYLES 
     ===================================*/
-    
-    /* Center content on mobile */
+
+/* Center content on mobile */
 @media (max-width: 768px) {
     .about-div {
         margin: 0 auto;
     }
+
     .text-center {
         text-align: center;
     }
 }
 
-    
-    /* Mobile-specific styles for centering navbar links vertically */
+
+/* Mobile-specific styles for centering navbar links vertically */
 @media (max-width: 767px) {
+
     /* Ensure the navbar-toggler (hamburger) icon is still clickable */
     .navbar-toggler {
-        z-index: 1050; /* Make sure it's above the other elements */
+        z-index: 1050;
+        /* Make sure it's above the other elements */
     }
 
     /* Center navbar items vertically in collapsed state */
     .navbar-collapse {
         display: flex;
-        flex-direction: column; /* Stack items vertically */
-        justify-content: center; /* Center items vertically */
-        align-items: center; /* Center items horizontally */
-        height: 0; /* Start with a height of 0 */
-        overflow: hidden; /* Hide content when collapsed */
-        transition: height 0.5s ease, padding 0.5s ease; /* Smooth transition for height */
+        flex-direction: column;
+        /* Stack items vertically */
+        justify-content: center;
+        /* Center items vertically */
+        align-items: center;
+        /* Center items horizontally */
+        height: 0;
+        /* Start with a height of 0 */
+        overflow: hidden;
+        /* Hide content when collapsed */
+        transition: height 0.5s ease, padding 0.5s ease;
+        /* Smooth transition for height */
     }
 
     /* When the navbar is expanded */
     .navbar-collapse.collapse.in {
-        height: auto; /* Expand to fit content */
-        padding-top: 10px; /* Add some space at the top if needed */
-        padding-bottom: 10px; /* Add some space at the bottom */
+        height: auto;
+        /* Expand to fit content */
+        padding-top: 10px;
+        /* Add some space at the top if needed */
+        padding-bottom: 10px;
+        /* Add some space at the bottom */
     }
 
     .navbar-nav {
         display: flex;
-        flex-direction: column; /* Stack links vertically */
-        align-items: center; /* Center horizontally */
-        width: 100%; /* Full width of the container */
-        opacity: 0; /* Initially hide navbar items */
-        transition: opacity 0.5s ease; /* Smooth transition for fading in */
+        flex-direction: column;
+        /* Stack links vertically */
+        align-items: center;
+        /* Center horizontally */
+        width: 100%;
+        /* Full width of the container */
+        opacity: 0;
+        /* Initially hide navbar items */
+        transition: opacity 0.5s ease;
+        /* Smooth transition for fading in */
     }
 
-    .navbar-nav > li {
-        width: 100%; /* Each item takes full width */
-        text-align: center; /* Center text in each link */
+    .navbar-nav>li {
+        width: 100%;
+        /* Each item takes full width */
+        text-align: center;
+        /* Center text in each link */
     }
 
-    .navbar-nav > li > a {
-        width: 100%; /* Make each link take full width */
-        padding: 15px 0; /* Padding for easier tap area */
-        text-align: center; /* Ensure text is centered */
+    .navbar-nav>li>a {
+        width: 100%;
+        /* Make each link take full width */
+        padding: 15px 0;
+        /* Padding for easier tap area */
+        text-align: center;
+        /* Ensure text is centered */
     }
 
     /* Make the navbar items fade in smoothly when menu is expanded */
     .navbar-collapse.collapse.in .navbar-nav {
-        opacity: 1; /* Show navbar items */
+        opacity: 1;
+        /* Show navbar items */
     }
 }
 
 
-    /* Remove border and underline from the logo and text */
+/* Remove border and underline from the logo and text */
 .navbar-inverse .navbar-brand {
-    border: none; /* Remove any border */
-    text-decoration: none; /* Remove text decoration */
+    border: none;
+    /* Remove any border */
+    text-decoration: none;
+    /* Remove text decoration */
 }
 
 /* Remove underline from navbar links */
-.navbar-inverse .navbar-nav > li > a {
-    text-decoration: none; /* Remove underline */
+.navbar-inverse .navbar-nav>li>a {
+    text-decoration: none;
+    /* Remove underline */
 }
 
 /* Prevent borders under navbar and logo */
 .navbar-inverse {
-    border-bottom: none; /* Remove border from bottom of the navbar */
+    border-bottom: none;
+    /* Remove border from bottom of the navbar */
 }
 
 /* Mobile-specific styles */
 @media (max-width: 767px) {
     .navbar-collapse {
-        border: none; /* No border when the navbar is collapsed */
-        box-shadow: none; /* Optional: remove box shadow if present */
+        border: none;
+        /* No border when the navbar is collapsed */
+        box-shadow: none;
+        /* Optional: remove box shadow if present */
     }
 
     .navbar-toggle {
-        border: none; /* Remove border from the hamburger icon */
+        border: none;
+        /* Remove border from the hamburger icon */
     }
 
     .navbar-inverse .navbar-collapse.in {
-        border: none; /* Prevent any border under the collapsed menu */
+        border: none;
+        /* Prevent any border under the collapsed menu */
     }
 
     .navbar-brand img {
-        margin-bottom: 0; /* Optional: adjust logo margin if needed */
+        margin-bottom: 0;
+        /* Optional: adjust logo margin if needed */
     }
 }
 
 
-    .logo-custom {
-        vertical-align: middle;
-        height: 40px; /* Sesuaikan tinggi logo jika diperlukan */
-        
-    }
-    
-    .logo-text {
-        font-size: 1.2em; /* Sesuaikan ukuran teks */
-        font-weight: bold;
-        color: #ffffff; /* Ubah warna sesuai kebutuhan */
-        margin-left: 8px; /* Jarak antara logo dan teks */
-        vertical-align: middle;
-    }
+.logo-custom {
+    vertical-align: middle;
+    height: 40px;
+    /* Sesuaikan tinggi logo jika diperlukan */
 
-    
+}
+
+.logo-text {
+    font-size: 1.2em;
+    /* Sesuaikan ukuran teks */
+    font-weight: bold;
+    color: #ffffff;
+    /* Ubah warna sesuai kebutuhan */
+    margin-left: 8px;
+    /* Jarak antara logo dan teks */
+    vertical-align: middle;
+}
+
+
 
 #menu {
     background-color: rgba(28, 43, 75, 1);
@@ -192,10 +237,11 @@
     border-color: transparent;
 }
 
-    .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-nav > li > a:hover {
-        color: #FFF;
-        padding: 22px 10px;
-    }
+.navbar-inverse .navbar-nav>li>a,
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #FFF;
+    padding: 22px 10px;
+}
 
 
 /*=====================================
@@ -212,22 +258,22 @@
     background-attachment: fixed;
 }
 
-    .home-sec .overlay {
-        background: rgba(38, 57, 88, 0.89);
-        min-height: 500px;
-    }
+.home-sec .overlay {
+    background: rgba(38, 57, 88, 0.89);
+    min-height: 500px;
+}
 
-    .home-sec h1 {
-        color: #fff;
-        font-weight: 900;
-        font-size: 50px;
-        text-transform: uppercase;
-        padding-bottom: 35px;
-    }
+.home-sec h1 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-bottom: 35px;
+}
 
-    .home-sec h3 {
-        text-transform: uppercase;
-    }
+.home-sec h3 {
+    text-transform: uppercase;
+}
 
 
 
@@ -242,12 +288,13 @@
 }
 
 .flex-control-nav {
-    display: none!important;
+    display: none !important;
 }
 
 .set-flexi a {
     margin: 5px;
 }
+
 /*=====================================
   TAG LINE STYLES 
     ===================================*/
@@ -257,17 +304,18 @@
     color: #000;
 }
 
-    .tag-line h2 {
-        font-size: 20px;
-        font-weight: 900;
-        padding: 5px 10px 10px 5px;
-        color: #005E5A;
-    }
+.tag-line h2 {
+    font-size: 20px;
+    font-weight: 900;
+    padding: 5px 10px 10px 5px;
+    color: #005E5A;
+}
 
-        .tag-line h2 > i {
-            margin-left: 8px;
-            margin-right: 8px;
-        }
+.tag-line h2>i {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
 /*=====================================
   HEADER LINE STYLES 
     ===================================*/
@@ -290,49 +338,61 @@ h1::after {
 /*=====================================
   ABOUT STYLES 
   ===================================*/
-  .about-div {
+.about-div {
     padding: 30px;
 }
-    
+
 .logo-title-container {
     display: flex;
-    flex-direction: column; /* Mengatur elemen menjadi kolom */
-    align-items: center;    /* Mengatur elemen agar berada di tengah secara horizontal */
-    text-align: center;     /* Mengatur teks agar berada di tengah */
+    flex-direction: column;
+    /* Mengatur elemen menjadi kolom */
+    align-items: center;
+    /* Mengatur elemen agar berada di tengah secara horizontal */
+    text-align: center;
+    /* Mengatur teks agar berada di tengah */
 }
 
 .logo-img {
-    max-width: 100%; /* Pastikan logo responsif */
-    height: auto;    /* Mempertahankan rasio aspek logo */
+    max-width: 100%;
+    /* Pastikan logo responsif */
+    height: auto;
+    /* Mempertahankan rasio aspek logo */
 }
 
 .title-text {
-    margin-top: 10px; /* Memberikan jarak antara logo dan judul */
-    font-size: 1.5em; /* Ukuran font untuk judul */
+    margin-top: 10px;
+    /* Memberikan jarak antara logo dan judul */
+    font-size: 1.5em;
+    /* Ukuran font untuk judul */
     font-weight: bold;
-    color: #333; /* Warna teks judul */
+    color: #333;
+    /* Warna teks judul */
 }
 
 /* Media Query untuk perangkat mobile */
 @media (max-width: 768px) {
     .logo-img {
-        width: 100px; /* Ukuran logo lebih besar di perangkat mobile */
+        width: 100px;
+        /* Ukuran logo lebih besar di perangkat mobile */
         height: 100px;
     }
 
     .title-text {
-        font-size: 1.5em; /* Ukuran teks judul sedikit lebih kecil di perangkat mobile */
+        font-size: 1.5em;
+        /* Ukuran teks judul sedikit lebih kecil di perangkat mobile */
     }
 }
 
 @media (max-width: 480px) {
     .logo-img {
-        width: 80px; /* Ukuran logo lebih besar lagi di perangkat dengan layar kecil */
+        width: 80px;
+        /* Ukuran logo lebih besar lagi di perangkat dengan layar kecil */
         height: 80px;
     }
 
     .title-text {
-        font-size: 1.3em; /* Ukuran teks judul lebih besar lagi di perangkat dengan layar kecil */
+        font-size: 1.3em;
+        /* Ukuran teks judul lebih besar lagi di perangkat dengan layar kecil */
     }
 }
 
@@ -344,61 +404,71 @@ h1::after {
     color: #fff;
 }
 
-    #faculty-sec .header-line {
-        color: #fff;
-    }
+#faculty-sec .header-line {
+    color: #fff;
+}
 
-    /* Center the text and limit the image size */
+/* Center the text and limit the image size */
 .faculty-div {
-    text-align: center; /* Centers all text within faculty-div */
+    text-align: center;
+    /* Centers all text within faculty-div */
 }
 
 .faculty-div img {
-    max-width: 100%; /* Ensures image does not exceed container width */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 10px; /* Rounded corners */
+    max-width: 100%;
+    /* Ensures image does not exceed container width */
+    height: auto;
+    /* Maintains aspect ratio */
+    border-radius: 10px;
+    /* Rounded corners */
 }
 
 /* Mobile-specific styling */
 @media (max-width: 768px) {
     .col-sm-4 {
-        width: 100%; /* Stacks columns vertically on mobile */
-        margin-bottom: 20px; /* Adds space between stacked columns */
+        width: 100%;
+        /* Stacks columns vertically on mobile */
+        margin-bottom: 20px;
+        /* Adds space between stacked columns */
     }
 
     .faculty-div img {
-        max-width: 80%; /* Smaller image size for mobile */
-        margin: 0 auto; /* Centers image */
-        display: block; /* Centers image */
+        max-width: 80%;
+        /* Smaller image size for mobile */
+        margin: 0 auto;
+        /* Centers image */
+        display: block;
+        /* Centers image */
     }
 }
 
 .faculty-div h4 {
-    line-height:30px;
-    font-weight:700;
+    line-height: 30px;
+    font-weight: 700;
 }
+
 .faculty-div {
     padding: 30px;
 }
 
-    .faculty-div hr {
-        border: 1px solid #1A94C4;
-    }
+.faculty-div hr {
+    border: 1px solid #1A94C4;
+}
 
-    .faculty-div h3 {
-        font-size: 25px;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
+.faculty-div h3 {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 
-    .faculty-div p {
-        padding-top: 10px;
-        padding-bottom: 15px;
-    }
+.faculty-div p {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
 
-    .faculty-div img {
-        border: 10px double #fff;
-    }
+.faculty-div img {
+    border: 10px double #fff;
+}
 
 /*=====================================
   CONTACT STYLES 
@@ -415,24 +485,26 @@ h1::after {
 }
 
 #contact-sec .overlay {
-        background: rgba(0, 0, 0, 0.76);
-        min-height: 600px;
-    }
-
-    #contact-sec h1 {
-        color:#fff;
-    }
-#contact-sec .form-control{
-    background-color:rgba(255, 255, 255, 0);
-    color:#fff;
+    background: rgba(0, 0, 0, 0.76);
+    min-height: 600px;
 }
+
+#contact-sec h1 {
+    color: #fff;
+}
+
+#contact-sec .form-control {
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+}
+
 /*=====================================
   Footer STYLES 
   ===================================*/
 #footer {
-    padding:5px 20px;
-    background-color:#2d3d5a;
-    text-align:right;
-    color:#fff;
-    font-size:15px;
+    padding: 5px 20px;
+    background-color: #2d3d5a;
+    text-align: right;
+    color: #fff;
+    font-size: 15px;
 }
