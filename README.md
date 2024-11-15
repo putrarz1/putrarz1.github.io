@@ -15,7 +15,7 @@ List that must be made:
 
 -perfect the page subpage jurusan
 
--subpage fasilitas 
+-subpage fasilitas (Done)
 
 -subpage ekstrakulikuler
 
