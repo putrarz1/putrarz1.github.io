@@ -11,7 +11,7 @@ List that must be made:
 
 -perfect the page jurusan(Done)
 
--perfect the page ekstrakulikuler
+-perfect the page ekstrakulikuler(Done)
 
 -perfect the page subpage jurusan(Done)
 
