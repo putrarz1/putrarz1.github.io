@@ -13,11 +13,11 @@ List that must be made:
 
 -perfect the page ekstrakulikuler
 
--perfect the page subpage jurusan
+-perfect the page subpage jurusan(Done)
 
 -subpage fasilitas (Done)
 
--subpage ekstrakulikuler
+-subpage ekstrakulikuler(Done)
 
 
 For now, that's what I have to do to get excited.
